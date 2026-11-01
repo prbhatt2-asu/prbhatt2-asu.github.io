@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Student Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-container">
+    <header class="site-header">
+      <a class="logo" href="#home">MY<span>PORTFOLIO</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <p class="eyebrow">WELCOME TO MY WEBSITE</p>
+          <h1>Hi, I'm <span>a Student Developer.</span></h1>
+          <p>I'm learning how to build websites using HTML and CSS. I enjoy technology, creative ideas, and trying new things.</p>
+          <a class="button" href="#projects">See My Projects</a>
+        </div>
+        <div class="hero-graphic" aria-hidden="true">
+          <div class="graphic-circle"><span>&lt;/&gt;</span></div>
+          <p>CREATE • LEARN • BUILD</p>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2>About Me</h2>
+        <p class="section-description">I'm a student interested in coding, computers, and design. This is my practice portfolio for Week 3 of web design class.</p>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-icon">💻</div>
+            <h3>Web Design</h3>
+            <p>I like learning how HTML and CSS work together to make websites.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🎨</div>
+            <h3>Creativity</h3>
+            <p>I enjoy choosing colors, fonts, and layouts that make pages look better.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🚀</div>
+            <h3>My Goal</h3>
+            <p>I want to keep improving my skills and create more useful projects.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <p class="eyebrow">WHAT I'M WORKING ON</p>
+        <h2>My Projects</h2>
+        <div class="card-grid projects-grid">
+          <article class="card project-card">
+            <span class="project-number">01</span>
+            <h3>My First HTML Page</h3>
+            <p>A basic website using headings, paragraphs, links, and HTML structure.</p>
+            <span class="tag">HTML</span>
+          </article>
+          <article class="card project-card">
+            <span class="project-number">02</span>
+            <h3>CSS Portfolio</h3>
+            <p>This Week 3 project uses custom fonts, colors, cards, and animations.</p>
+            <span class="tag">HTML + CSS</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <p class="eyebrow">SAY HELLO</p>
+        <h2>Contact Me</h2>
+        <p>Thanks for checking out my website!</p>
+        <p class="contact-note">Add your school email or GitHub link here.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made for Week 3 Web Design Class • 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
