@@ -1,0 +1,63 @@
+/* Page background */
+body {
+  background-color: #e9f1f8;
+  font-family: Arial, sans-serif;
+}
+
+/* Card parent container */
+.card {
+  width: 500px;
+  height: 750px;
+  padding: 36px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(20, 45, 70, 0.18); /* Bonus */
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+/* Image inside the card */
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+/* Heading */
+.card h1 {
+  font-family: Georgia, serif;
+  color: #183b56;
+  font-size: 36px;
+}
+
+/* Description paragraph: smaller than the H1 */
+.card p {
+  color: #465767;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Button link and pseudo-classes */
+.card a {
+  text-decoration: none;
+}
+
+.card button {
+  background-color: #1769aa;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #104b7b;
+}
+
+.card button:active {
+  transform: scale(0.98);
+}
