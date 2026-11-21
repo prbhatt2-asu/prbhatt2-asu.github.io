@@ -1,0 +1,56 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #edf3fa;
+  color: #223047;
+  padding: 40px 16px;
+}
+.planner {
+  max-width: 680px;
+  margin: auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(25, 45, 75, 0.1);
+}
+.header { display: flex; justify-content: space-between; align-items: flex-start; gap: 15px; }
+.eyebrow { color: #3761a0; font-size: 12px; font-weight: bold; letter-spacing: 2px; }
+h1 { margin: 8px 0; font-size: 30px; }
+h2 { font-size: 20px; margin-bottom: 10px; }
+p { line-height: 1.5; }
+#greeting { color: #56657b; margin-top: 6px; }
+.intro { padding: 12px 0; }
+.tasks { background: #f4f7fc; padding: 20px; border-radius: 12px; }
+label { font-weight: bold; display: block; margin-bottom: 8px; }
+.form-row { display: flex; gap: 10px; }
+#taskInput {
+  flex: 1; min-width: 0; padding: 12px; border: 2px solid #cbd6e5;
+  border-radius: 8px; font: inherit; background: white; color: #223047;
+}
+#taskInput:focus { outline: none; border-color: #3068bb; }
+button {
+  border: 0; border-radius: 8px; padding: 12px 15px;
+  background: #3068bb; color: white; font: inherit; font-weight: bold;
+  cursor: pointer;
+}
+button:hover { background: #225398; }
+.tip, .count { font-size: 13px; color: #56657b; }
+#taskList { padding: 0; margin: 18px 0 10px; list-style: none; }
+#taskList li { background: #fff; border: 1px solid #dce4ef; border-radius: 8px; margin-bottom: 8px; padding: 13px; }
+#taskList label { display: flex; align-items: center; gap: 12px; margin: 0; font-weight: normal; cursor: pointer; }
+#taskList input { width: 18px; height: 18px; accent-color: #3068bb; }
+#taskList li.done span { text-decoration: line-through; color: #8190a3; }
+footer { text-align: center; margin-top: 25px; font-size: 12px; color: #6e7d92; }
+/* Dark theme is applied by JavaScript when the button is clicked. */
+body.dark { background: #172334; color: #f3f6fb; }
+body.dark .planner { background: #24344a; }
+body.dark .tasks { background: #1b293b; }
+body.dark #taskList li { background: #2b3d56; border-color: #435772; }
+body.dark #greeting, body.dark .tip, body.dark .count, body.dark footer { color: #bdc9da; }
+body.dark .eyebrow { color: #8fbaff; }
+@media (max-width: 480px) {
+  .planner { padding: 20px; }
+  .header { flex-direction: column; }
+  .form-row { flex-direction: column; }
+}

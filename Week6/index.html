@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="planner">
+    <header class="header">
+      <div>
+        <p class="eyebrow">STUDENT DASHBOARD</p>
+        <h1>My Study Planner</h1>
+        <p id="greeting">Welcome to your study planner!</p>
+      </div>
+      <button id="themeButton" type="button">Dark Mode</button>
+    </header>
+
+    <section class="intro">
+      <h2>Stay on track</h2>
+      <p>Add homework or study tasks below. Check them off when you're finished.</p>
+    </section>
+
+    <section class="tasks" aria-labelledby="tasksHeading">
+      <h2 id="tasksHeading">My Tasks</h2>
+      <form id="taskForm">
+        <label for="taskInput">New task</label>
+        <div class="form-row">
+          <input id="taskInput" type="text" placeholder="Example: Study for Java quiz" maxlength="100" required>
+          <button type="submit">Add Task</button>
+        </div>
+        <p id="inputTip" class="tip">Click the box to start typing a task.</p>
+      </form>
+      <ul id="taskList">
+        <li><label><input type="checkbox"><span>Review class notes</span></label></li>
+        <li><label><input type="checkbox"><span>Finish homework</span></label></li>
+      </ul>
+      <p id="taskCount" class="count">0 of 2 tasks completed</p>
+    </section>
+    <footer>Made by Paavak Bhatt • Week 6 Assignment</footer>
+  </main>
+</body>
+</html>
